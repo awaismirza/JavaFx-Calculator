@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="400.0" styleClass="anchorstyle" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLDocumentController">
+    <children>
+      <TextField fx:id="display" editable="false" onInputMethodTextChanged="#operateButton" prefHeight="40.0" prefWidth="400.0" styleClass="textField" stylesheets="@styleSheet.css" />
+      <HBox layoutY="52.0" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: black;" stylesheets="@styleSheet.css" AnchorPane.topAnchor="40.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="7" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="8" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="9" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="/" />
+         </children>
+      </HBox>
+      <HBox layoutY="80.0" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: black;" stylesheets="@styleSheet.css" AnchorPane.topAnchor="80.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="4" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="5" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="6" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="*" />
+         </children>
+      </HBox>
+      <HBox layoutY="120.0" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: black;" stylesheets="@styleSheet.css">
+         <children>
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="1" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="2" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="3" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="-" />
+         </children>
+      </HBox>
+      <HBox layoutY="160.0" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: black;" stylesheets="@styleSheet.css">
+         <children>
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="0" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="." />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="=" />
+            <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" styleClass="Button" stylesheets="@styleSheet.css" text="+" />
+         </children>
+      </HBox>
+      <Button layoutY="200.0" mnemonicParsing="false" onAction="#operateButton" onInputMethodTextChanged="#operateButton" prefHeight="40.0" prefWidth="400.0" styleClass="Clear" stylesheets="@styleSheet.css" text="C" />
+   </children>
+</AnchorPane>
